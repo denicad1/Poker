@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmPoker
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmPoker
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblRank = New System.Windows.Forms.Label()
         Me.lblSuit = New System.Windows.Forms.Label()
@@ -29,18 +29,18 @@ Partial Class frmPoker
         Me.lblC3 = New System.Windows.Forms.Label()
         Me.lblC4 = New System.Windows.Forms.Label()
         Me.lblC5 = New System.Windows.Forms.Label()
-        Me.TxtC1 = New System.Windows.Forms.TextBox()
-        Me.TxtC2 = New System.Windows.Forms.TextBox()
-        Me.TxtC3 = New System.Windows.Forms.TextBox()
-        Me.TxtC4 = New System.Windows.Forms.TextBox()
-        Me.TxtC5 = New System.Windows.Forms.TextBox()
+        Me.txtC1 = New System.Windows.Forms.TextBox()
+        Me.txtC2 = New System.Windows.Forms.TextBox()
+        Me.txtC3 = New System.Windows.Forms.TextBox()
+        Me.txtC4 = New System.Windows.Forms.TextBox()
+        Me.txtC5 = New System.Windows.Forms.TextBox()
         Me.txtS1 = New System.Windows.Forms.TextBox()
         Me.txtS2 = New System.Windows.Forms.TextBox()
         Me.txtS3 = New System.Windows.Forms.TextBox()
         Me.txtS4 = New System.Windows.Forms.TextBox()
         Me.txtS5 = New System.Windows.Forms.TextBox()
         Me.btnDisplay = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.txtResult = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblRank
@@ -106,40 +106,40 @@ Partial Class frmPoker
         Me.lblC5.TabIndex = 8
         Me.lblC5.Text = "Card #5"
         '
-        'TxtC1
+        'txtC1
         '
-        Me.TxtC1.Location = New System.Drawing.Point(97, 73)
-        Me.TxtC1.Name = "TxtC1"
-        Me.TxtC1.Size = New System.Drawing.Size(51, 22)
-        Me.TxtC1.TabIndex = 9
+        Me.txtC1.Location = New System.Drawing.Point(97, 73)
+        Me.txtC1.Name = "txtC1"
+        Me.txtC1.Size = New System.Drawing.Size(51, 22)
+        Me.txtC1.TabIndex = 9
         '
-        'TxtC2
+        'txtC2
         '
-        Me.TxtC2.Location = New System.Drawing.Point(97, 101)
-        Me.TxtC2.Name = "TxtC2"
-        Me.TxtC2.Size = New System.Drawing.Size(51, 22)
-        Me.TxtC2.TabIndex = 12
+        Me.txtC2.Location = New System.Drawing.Point(97, 101)
+        Me.txtC2.Name = "txtC2"
+        Me.txtC2.Size = New System.Drawing.Size(51, 22)
+        Me.txtC2.TabIndex = 12
         '
-        'TxtC3
+        'txtC3
         '
-        Me.TxtC3.Location = New System.Drawing.Point(97, 130)
-        Me.TxtC3.Name = "TxtC3"
-        Me.TxtC3.Size = New System.Drawing.Size(51, 22)
-        Me.TxtC3.TabIndex = 13
+        Me.txtC3.Location = New System.Drawing.Point(97, 130)
+        Me.txtC3.Name = "txtC3"
+        Me.txtC3.Size = New System.Drawing.Size(51, 22)
+        Me.txtC3.TabIndex = 13
         '
-        'TxtC4
+        'txtC4
         '
-        Me.TxtC4.Location = New System.Drawing.Point(97, 163)
-        Me.TxtC4.Name = "TxtC4"
-        Me.TxtC4.Size = New System.Drawing.Size(51, 22)
-        Me.TxtC4.TabIndex = 14
+        Me.txtC4.Location = New System.Drawing.Point(97, 163)
+        Me.txtC4.Name = "txtC4"
+        Me.txtC4.Size = New System.Drawing.Size(51, 22)
+        Me.txtC4.TabIndex = 14
         '
-        'TxtC5
+        'txtC5
         '
-        Me.TxtC5.Location = New System.Drawing.Point(97, 195)
-        Me.TxtC5.Name = "TxtC5"
-        Me.TxtC5.Size = New System.Drawing.Size(51, 22)
-        Me.TxtC5.TabIndex = 15
+        Me.txtC5.Location = New System.Drawing.Point(97, 195)
+        Me.txtC5.Name = "txtC5"
+        Me.txtC5.Size = New System.Drawing.Size(51, 22)
+        Me.txtC5.TabIndex = 15
         '
         'txtS1
         '
@@ -185,31 +185,30 @@ Partial Class frmPoker
         Me.btnDisplay.Text = "Display Type of Hand"
         Me.btnDisplay.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'txtResult
         '
-        Me.ListView1.Location = New System.Drawing.Point(165, 323)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(121, 97)
-        Me.ListView1.TabIndex = 22
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.txtResult.Location = New System.Drawing.Point(50, 294)
+        Me.txtResult.Name = "txtResult"
+        Me.txtResult.Size = New System.Drawing.Size(220, 22)
+        Me.txtResult.TabIndex = 22
         '
         'frmPoker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.txtResult)
         Me.Controls.Add(Me.btnDisplay)
         Me.Controls.Add(Me.txtS5)
         Me.Controls.Add(Me.txtS4)
         Me.Controls.Add(Me.txtS3)
         Me.Controls.Add(Me.txtS2)
         Me.Controls.Add(Me.txtS1)
-        Me.Controls.Add(Me.TxtC5)
-        Me.Controls.Add(Me.TxtC4)
-        Me.Controls.Add(Me.TxtC3)
-        Me.Controls.Add(Me.TxtC2)
-        Me.Controls.Add(Me.TxtC1)
+        Me.Controls.Add(Me.txtC5)
+        Me.Controls.Add(Me.txtC4)
+        Me.Controls.Add(Me.txtC3)
+        Me.Controls.Add(Me.txtC2)
+        Me.Controls.Add(Me.txtC1)
         Me.Controls.Add(Me.lblC5)
         Me.Controls.Add(Me.lblC4)
         Me.Controls.Add(Me.lblC3)
@@ -230,16 +229,16 @@ Partial Class frmPoker
     Friend WithEvents lblC3 As Label
     Friend WithEvents lblC4 As Label
     Friend WithEvents lblC5 As Label
-    Friend WithEvents TxtC1 As TextBox
-    Friend WithEvents TxtC2 As TextBox
-    Friend WithEvents TxtC3 As TextBox
-    Friend WithEvents TxtC4 As TextBox
-    Friend WithEvents TxtC5 As TextBox
+    Friend WithEvents txtC1 As TextBox
+    Friend WithEvents txtC2 As TextBox
+    Friend WithEvents txtC3 As TextBox
+    Friend WithEvents txtC4 As TextBox
+    Friend WithEvents txtC5 As TextBox
     Friend WithEvents txtS1 As TextBox
     Friend WithEvents txtS2 As TextBox
     Friend WithEvents txtS3 As TextBox
     Friend WithEvents txtS4 As TextBox
     Friend WithEvents txtS5 As TextBox
     Friend WithEvents btnDisplay As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents txtResult As TextBox
 End Class
