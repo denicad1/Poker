@@ -107,7 +107,7 @@
         Do
             denom = denom - 1
         Loop Until IsAnySuit(hand, denom)
-        'if there are less than 4 
+        'if there are less than 4 then there can't be a straight
         If denom < 4 Then
             Return False
 
