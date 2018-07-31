@@ -10,6 +10,7 @@
 
     End Sub
     Private Function GetScore(hand(,) As Integer, suits() As Integer, denoms() As Integer) As String
+        'uses other functions to give you an answer of what kind of hand you have
         If IsFlush(suits) And IsStraight(hand) Then
             Return "Straight Flush"
         End If
@@ -38,7 +39,7 @@
     End Function
 
     Function IsFlush(suits() As Integer) As Boolean
-        'suits will equal 5 when suit adds up to 5 from the select case in InputCard which will give you either true or false
+        'if a certain suit is selected 5 times then it willl return true
 
         For suit As Integer = 0 To 3
             If suits(suit) = 5 Then
@@ -56,7 +57,7 @@
         Return True
     End Function
     Private Function IsFourofKind(denoms() As Integer) As Boolean
-        'determines if hand is a four of a kind or not
+        'uses for loop to determine if there are 4 of the same kind of card
         For denom As Integer = 0 To 12
 
             If denoms(denom) = 4 Then
@@ -102,10 +103,11 @@
     Private Function IsStraight(hand(,) As Integer) As Boolean
         'determines if there is a straight
         Dim denom As Integer = 13
+        'find highest denom
         Do
             denom = denom - 1
         Loop Until IsAnySuit(hand, denom)
-
+        'if there are less than 4 
         If denom < 4 Then
             Return False
 
@@ -115,6 +117,7 @@
                 Return False
             End If
         Next
+
         If (denom = 12 And IsAnySuit(hand, 0) Or (denom = 12 And IsAnySuit(hand, 8))) Then
             Return True
         ElseIf denom = 4 And IsAnySuit(hand, 0) Then
@@ -125,7 +128,7 @@
         Return False
     End Function
     Private Function IsAnySuit(hand(,) As Integer, denom As Integer) As Boolean
-
+        'checks to see if there is a 1 of any kind of suit
         For suit As Integer = 0 To 3
             If hand(suit, denom) = 1 Then
                 Return True
@@ -145,12 +148,13 @@
                 suit = 1
             Case "H" 'this is hearts
                 suit = 2
-            Case Else 'this is spades
+            Case Else 'this is spades. any other letter than C,D,or H will be spades
                 suit = 3
         End Select
 
         hand(suit, denom) = 1 'suit chooses the row and denom chooses the column of the array
+
         suits(suit) += 1 'this is the counter for suits
-        denoms(denom) += 1 'this is the counter for denom
+        denoms(denom) += 1 'this is the counter for denoms
     End Sub
 End Class
